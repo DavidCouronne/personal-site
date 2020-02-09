@@ -26,6 +26,7 @@ module.exports = {
             'active',
             'rich-text',
             'code',
+            'language-text',
             'svg-inline--fa',
             'table',
             'table-striped',
