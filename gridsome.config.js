@@ -28,11 +28,13 @@ module.exports = {
           whitelistPatterns: [
             /fa-$/,
             /blockquote$/,
-            /code$/,
+            /^code/,
             /pre$/,
             /token$/,
             /^language/,
             /^gridsome/,
+            /^line/,
+            /^has/,
             /table$/,
             /table-$/
           ],
