@@ -16,6 +16,16 @@ module.exports = {
         tailwindConfig: './tailwind.config.js',
         purgeConfig: {
           whitelist: [
+            'body',
+            'html',
+            'img',
+            'a',
+            'g-image',
+            'g-image--lazy',
+            'g-image--loaded',
+            'active',
+            'rich-text',
+            'code',
             'svg-inline--fa',
             'table',
             'table-striped',
