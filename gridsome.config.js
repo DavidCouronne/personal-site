@@ -51,7 +51,7 @@ module.exports = {
         plugins: [
           'gridsome-plugin-remark-prismjs-all',
           'gridsome-remark-katex',
-          'gridsome-plugin-remark-container'
+         
           
         ],
       },
