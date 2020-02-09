@@ -15,7 +15,7 @@
     "@gridsome/vue-remark": "^0.1.9",
     "axios": "^0.19.2",
     "gridsome": "^0.7.12",
-    "gridsome-plugin-remark-prismjs-all": "^0.3.1",
+    "gridsome-plugin-remark-prismjs-all": "^0.3.2",
     "gridsome-plugin-rss": "^1.2.0",
     "gridsome-plugin-tailwindcss": "^2.2.34",
     "gridsome-remark-katex": "^0.1.1",

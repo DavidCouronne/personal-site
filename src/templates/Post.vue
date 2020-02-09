@@ -1,6 +1,11 @@
 <template>
   <Layout>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+      integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq"
+      crossorigin="anonymous"
+    />
     <div class="container-inner mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
