@@ -28,9 +28,7 @@ module.exports = {
           whitelistPatterns: [
             /fa-$/,
             /blockquote$/,
-            /^code/,
-            /pre$/,
-            /token$/,
+            /^token/, /^pre/, /^code/,
             /^language/,
             /^gridsome/,
             /^line/,
@@ -38,7 +36,7 @@ module.exports = {
             /table$/,
             /table-$/
           ],
-          whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
+          //whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
         },
         presetEnvConfig: {},
         shouldPurge: true,
