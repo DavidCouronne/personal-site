@@ -4,8 +4,6 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-
-
 module.exports = {
   siteName: 'David Couronné',
   siteDescription:
@@ -23,27 +21,29 @@ module.exports = {
             'table-striped',
             'table-bordered',
             'table-hover',
-            'table-sm'
+            'table-sm',
           ],
           whitelistPatterns: [
             /fa-$/,
             /blockquote$/,
-            /^token/, /^pre/, /^code/,
+            /^token/,
+            /^pre/,
+            /^code/,
             /^language/,
             /^gridsome/,
             /^line/,
             /^has/,
             /table$/,
-            /table-$/
+            /table-$/,
           ],
-          //whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
+          whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
         },
         presetEnvConfig: {},
         shouldPurge: true,
         shouldImport: true,
         shouldTimeTravel: true,
-        shouldPurgeUnusedKeyframes: true
-      }
+        shouldPurgeUnusedKeyframes: true,
+      },
     },
     {
       use: '@gridsome/vue-remark',
@@ -55,8 +55,6 @@ module.exports = {
         plugins: [
           'gridsome-plugin-remark-prismjs-all',
           'gridsome-remark-katex',
-         
-          
         ],
       },
     },
@@ -116,5 +114,4 @@ module.exports = {
       anchorClassName: 'icon icon-link',
     },
   },
-  
 }
