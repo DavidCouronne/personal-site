@@ -30,6 +30,9 @@ module.exports = {
             /blockquote$/,
             /code$/,
             /pre$/,
+            /token$/,
+            /language$/,
+            /gridsome$/,
             /table$/,
             /table-$/
           ]
