@@ -4,12 +4,7 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
 
-const postcssPlugins = [tailwind()]
-
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
   siteName: 'David Couronné',
@@ -17,6 +12,35 @@ module.exports = {
     'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
   siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
   plugins: [
+    {
+      use: 'gridsome-plugin-tailwindcss',
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        purgeConfig: {
+          whitelist: [
+            'svg-inline--fa',
+            'table',
+            'table-striped',
+            'table-bordered',
+            'table-hover',
+            'table-sm'
+          ],
+          whitelistPatterns: [
+            /fa-$/,
+            /blockquote$/,
+            /code$/,
+            /pre$/,
+            /table$/,
+            /table-$/
+          ]
+        },
+        presetEnvConfig: {},
+        shouldPurge: true,
+        shouldImport: true,
+        shouldTimeTravel: true,
+        shouldPurgeUnusedKeyframes: true
+      }
+    },
     {
       use: '@gridsome/vue-remark',
       options: {
@@ -27,7 +51,8 @@ module.exports = {
         plugins: [
           'gridsome-plugin-remark-prismjs-all',
           'gridsome-remark-katex',
-          //[ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+          'gridsome-plugin-remark-container'
+          
         ],
       },
     },
@@ -57,7 +82,7 @@ module.exports = {
           title: node.title,
           description: node.description,
           url: 'https://gridsome-portfolio-starter.netlify.com' + node.path,
-          author: 'Andre Madarang',
+          author: 'David Couronné',
           date: node.date,
         }),
         output: {
@@ -87,11 +112,5 @@ module.exports = {
       anchorClassName: 'icon icon-link',
     },
   },
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: postcssPlugins,
-      },
-    },
-  },
+  
 }

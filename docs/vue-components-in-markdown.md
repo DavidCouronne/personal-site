@@ -11,9 +11,15 @@ Below is a Vue Component from `~/components/CounterComponent.vue`:
 <test-component />
 
 
-# hop
+:::tip Container
+# Header One
 
-On a *test*
+With container contents. 
+:::
+
+
+
+
 
 <solution>
 
