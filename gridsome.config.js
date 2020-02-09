@@ -117,6 +117,7 @@ module.exports = {
     remark: {
       plugins: [
         'gridsome-plugin-remark-prismjs-all',
+        'gridsome-remark-katex',
         // [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
       ],
       externalLinksTarget: '_blank',
