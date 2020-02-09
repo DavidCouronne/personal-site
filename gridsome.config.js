@@ -35,7 +35,8 @@ module.exports = {
             /gridsome$/,
             /table$/,
             /table-$/
-          ]
+          ],
+          whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
         },
         presetEnvConfig: {},
         shouldPurge: true,
