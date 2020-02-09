@@ -31,8 +31,8 @@ module.exports = {
             /code$/,
             /pre$/,
             /token$/,
-            /language$/,
-            /gridsome$/,
+            /^language/,
+            /^gridsome/,
             /table$/,
             /table-$/
           ],
