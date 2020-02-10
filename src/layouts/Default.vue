@@ -3,20 +3,15 @@
     class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen"
     :class="theme"
   >
-    <header class="border-t-14 border-green-700">
+    <header class="border-t-14 border-black">
       <nav
         class="container mx-auto flex flex-wrap justify-between items-center py-8"
       >
-        <div>
-          <g-link v-if="theme === 'theme-light'" to="/"
-            ><g-image src="../../static/logo.svg" class="w-40" alt="logo"
-          /></g-link>
-          <g-link v-else to="/"
-            ><g-image
-              src="../../static/logo_dark_mode.svg"
-              class="w-40"
-              alt="logo"
-          /></g-link>
+        <div class="flex items-center flex-shrink-0  mr-6">
+          <font-awesome :icon="['fas', 'ghost']" class="mr-3"></font-awesome>
+          <span class="font-semibold text-xl tracking-tight"
+            >David Couronné</span
+          >
         </div>
         <div class="block lg:hidden">
           <button
@@ -107,7 +102,7 @@
     <div class="flex-grow">
       <slot />
     </div>
-    <footer class="bg-green-700 text-white">
+    <footer class="bg-purple-700 text-white">
       <div
         class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
       >

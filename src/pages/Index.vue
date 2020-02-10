@@ -4,14 +4,14 @@
       class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16"
     >
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="leading-tight">Gridsome Portfolio Starter</div>
-        <div class="text-green-700 leading-tight">
-          Powered by Vue.js &amp; Tailwind v1
+        <div class="leading-tight">
+          Mathematics Teacher &amp; Autodidact developer
         </div>
+        <div class="text-purple-700 leading-tight">Welcome to my Website</div>
       </div>
       <div class="mt-8 sm:mt-0">
         <g-image
-          src="../../static/developer.svg"
+          src="../../static/undraw_mathematics_4otb.svg"
           alt="hero"
           class="mx-auto sm:mx-0"
         />
@@ -21,32 +21,33 @@
 
     <div class="container-inner mx-auto">
       <p class="text-lg sm:text-xl">
-        This gridsome theme was forked from my
-        <a href="https://andremadarang.com">personal website</a>. I added more
-        features and decided to release it as an open source project. Check it
-        out on
-        <a href="https://github.com/drehimself/gridsome-portfolio-starter"
-          >GitHub</a
-        >
-        or check out the
-        <a href="https://www.youtube.com/watch?v=uHo6o1TNQeE"
-          >screencast I did</a
-        >. Feel free to use it for your own site or projects! Lorem, ipsum dolor
-        sit amet consectetur adipisicing elit. Minima, repellat. Dolores iure,
-        quas perspiciatis rerum quaerat atque eum repellat autem.
+        Greetings! I’m David. I'm a mathematics Teacher, and I love developing
+        web applications, Vue.js on the frontend and Tailwind CSS for styling.
       </p>
+      <div class="flex items-stretch">
+        <button
+          class="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded self-center"
+        >
+          <g-link to="/blog" class="text-white hover:text-white"
+            >Start Reading !</g-link
+          >
+        </button>
+      </div>
 
       <div class="flex justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-          <g-image src="../../static/mind_map.svg" alt="browser" />
+          <g-image src="../../static/undraw_mind_map_cwng.svg" alt="browser" />
         </div>
         <div class="w-1/2 px-8 hidden sm:flex justify-end">
-          <g-image src="../../static/code_review.svg" alt="mobile" />
+          <g-image
+            src="../../static/undraw_code_review_l1q9.svg"
+            alt="mobile"
+          />
         </div>
       </div>
     </div>
-
-    <div class="overflow-x-hidden">
+<!-- projects -->
+    <!-- <div class="overflow-x-hidden">
       <div
         class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
       >
@@ -94,10 +95,11 @@
           </li>
         </ul>
       </div>
-      <!-- end projects -->
-    </div>
-
-    <div class="overflow-x-hidden border-gray-200 border-b">
+      
+    </div> -->
+    <!-- end projects -->
+<!-- get to know me -->
+    <!-- <div class="overflow-x-hidden border-gray-200 border-b">
       <div
         class="get-to-know-me container-inner mx-auto text-xl pb-16 relative"
       >
@@ -139,10 +141,13 @@
           ></iframe>
         </div>
       </div>
-      <!-- end get-to-know me -->
-    </div>
+     
+    </div> -->
+     <!-- end get-to-know me -->
 
-    <div class="overflow-x-hidden">
+     <!-- contact me -->
+
+    <!-- <div class="overflow-x-hidden">
       <div class="contact-me bg-background-secondary pt-16">
         <div class="container-inner mx-auto text-xl pb-4 relative">
           <h2 class="font-bold mb-6" id="contact">Contact me:</h2>
@@ -162,7 +167,8 @@
             <a href="https://www.netlify.com/docs/form-handling"
               >Netlify Forms</a
             >
-            or <a href="https://formspree.io">FormSpree</a> can help you do this
+            or
+            <a href="https://formspree.io">FormSpree</a> can help you do this
             without a backend.
           </p>
 
@@ -170,9 +176,9 @@
             <form action="#" class="mb-12">
               <div class="flex flex-wrap mb-6 -mx-4">
                 <div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
-                  <label class="block mb-2 text-copy-primary" for="name">
-                    Name
-                  </label>
+                  <label class="block mb-2 text-copy-primary" for="name"
+                    >Name</label
+                  >
 
                   <input
                     type="text"
@@ -185,9 +191,9 @@
                 </div>
 
                 <div class="w-full px-4 md:w-1/2">
-                  <label class="block text-copy-primary mb-2" for="email">
-                    Email Address
-                  </label>
+                  <label class="block text-copy-primary mb-2" for="email"
+                    >Email Address</label
+                  >
 
                   <input
                     type="email"
@@ -201,9 +207,9 @@
               </div>
 
               <div class="w-full mb-12">
-                <label class="block text-copy-primary mb-2" for="message">
-                  Message
-                </label>
+                <label class="block text-copy-primary mb-2" for="message"
+                  >Message</label
+                >
 
                 <textarea
                   id="message"
@@ -226,10 +232,14 @@
           </div>
         </div>
       </div>
-      <!-- end contact-me -->
-    </div>
+     
+    </div> -->
 
-    <div class="newsletter bg-background-tertiary">
+     <!-- end contact-me -->
+
+     <!-- newletter -->
+
+    <!-- <div class="newsletter bg-background-tertiary">
       <div class="container-inner mx-auto py-16 pb-8 text-center textl-xl">
         <h2 class="text-2xl font-bold mb-8">Join my Newsletter</h2>
 
@@ -257,8 +267,8 @@
             </div>
           </form>
         </div>
-      </div>
-
+      </div> -->
+<!-- end newletter -->
       <div class="container-inner mx-auto -mt-32 pb-4 overflow-x-hidden">
         <svg width="725" height="166" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
